@@ -6,7 +6,7 @@
 }
 
 body{
-	font-family: Roboto, Arial, Helvetica, sans-serif;
+	font-family: Open Sans, Arial, Helvetica, sans-serif;
 	font-size: 18px;
 }
 
@@ -14,7 +14,10 @@ header{
     width: 100%;
     display: flex;	
     align-items: center;
-    background-color: #4E5166;
+    position: fixed;
+    line-height: 1.2;
+    background-color: white;
+    z-index: 1;
 }
 
 nav{
@@ -26,27 +29,184 @@ nav{
 
 nav ul{
     display: flex;
+    margin-right: 105px;
 }
 
 
 nav ul li{
     width: 50%;
-    padding:  30px;
-    margin-right: 10px;
+    margin-right: 30px;
 }
 
 nav a {
-    color: black;
-    font-weight: 500;
+    color: #212529;
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 37px;
+    text-transform: uppercase;
+    transition: all 400ms;
 }
 
 nav a:hover{
-    color: orange;
+    color: #f05f40;
 }
 
-#accueil{
+.logo{
+    color: #f05f40;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-left: 120px;
+    width: 17%;
+    text-transform: uppercase;
+}
+
+.imgBack{
+    object-fit: cover;
+    width: 100%;
+    height: 650px;
+    z-index: -1;
+}
+
+#About{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 25px;
+    width: 100%;
+}
+
+.imgText{
+    position: absolute;
+    top: 35%;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+hr{
+    background-color: #f05f40;
+    border: none;
+    width: 4%;
+    margin: 20px auto;
+    height: 3px;
+}
+
+.hr2{
+    background-color: white;
+    border: none;
+    width: 4%;
+    margin: 20px auto;
+    height: 3px;
+}
+
+h4{
+    font-size: 1.45rem;
+    font-weight: 300;
+    font-family: Merriweater;
+    color: white;
+    opacity: 0.7;
+    margin: 10px 300px 50px 300px;
+    text-align: center;
+}
+
+h5{
+    font-size: 1.25rem;
+    font-weight: 300;
+    font-family: Merriweater;
+    color: white;
+    opacity: 0.7;
+    margin: 10px 250px 50px 250px;
+    text-align: center;
+}
+
+.btn {
+    background-color: #f05f40;
+    color: white;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    display: flex;
+    width: 14%;
+    margin: auto;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    transition: filter 300ms, box-shadow 300ms 100ms;
+}
+
+.btn:hover {
+    filter: brightness(120%);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.aboutText{
+    background-color: #f05f40;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.btn2{
+    background-color: #eaeaea;
+    color: black;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    display: flex;
+    width: 17%;
+    margin: auto;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    transition: filter 300ms, box-shadow 300ms 100ms;
+}
+
+.btn2:hover {
+    filter: brightness(120%);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.servText{
+    background-color: #212529;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+}
+
+.service{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+i{
+    color: #f05f40;
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+article{
+    text-align: center;
+    width: 23%;
+    margin: 50px auto;
+}
+
+subtitle{
+    color: white;
+    opacity: 0.7;
 }
