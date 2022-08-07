@@ -17,7 +17,7 @@
 <body>
 
     <header>
-            <a class="logo" href="#cyberboutique">Cyber-Boutique</a>
+            <a class="logo" href="#Accueil">Cyber-Boutique</a>
         <nav>
             <ul>
                 <li><a href="#About"><p>A Propos</p></a></li>
@@ -29,7 +29,7 @@
     </header>
 
     <main>
-        <section id="About">
+        <section id="Accueil">
         <img class="imgBack" src="images/header.jpg" alt="fond page d'accueil">
             <div class="imgText">
             <h1>Cyber-Boutique</h1>
@@ -42,9 +42,9 @@
             </div>
         </section>
 
-        <section id="Services">
+        <section id="About">
             <div class="aboutText">
-                <h2>Pourquoi j'ai créé cette entreprise ?</h2>
+                <h3>Pourquoi j'ai créé cette entreprise ?</h3>
                 <hr class="hr2"/>
                     <h5>J'ai constaté que le personnel des grandes enseignes n'est 
                         pas suffisamment formé pour répondre aux besoins de leurs clients. 
@@ -57,29 +57,29 @@
 
         <section id="Services">
             <div class="servText">
-                <h2>Quels services ?</h2>
+                <h3>Quels services ?</h3>
                 <hr class="hr1"/>
             <div class="service">
                 <article>
                     <i class="fa-solid fa-power-off"></i>
-                    <h2>Panne informatique</h2>
+                    <h3>Panne informatique</h3>
                     <subtitle>Quel que soit votre problème je ferais de mon mieux 
                         pour le résoudre au plus vite.</subtitle>
                 </article>
                 <article>
                     <i class="fa-solid fa-paper-plane"></i>
-                    <h2>Projet</h2>
+                    <h3>Projet</h3>
                     <subtitle>J'accompagne autant les professionnels que les particuliers.</subtitle>
                 </article>
                 <article>
                     <i class="fa-solid fa-newspaper"></i>
-                    <h2>Mis à jour</h2>
+                    <h3>Mise à jour</h3>
                     <subtitle>Je me tiens au courant de toute les nouveautés dans le but 
                         de vous proposer un service toujours à jour.</subtitle>
                 </article>
                 <article>
                     <i class="fa-solid fa-heart"></i>
-                    <h2>Budget maitrisé</h2>
+                    <h3>Budget maitrisé</h3>
                     <subtitle>Peu m'importe que vous ayez un gros ou un petit budget je ferais 
                         de mon mieux pour vous trouver une solution adaptée.</subtitle>
                 </article>
@@ -87,6 +87,71 @@
             </div>    
         </section>
 
+        <section id="Réalisations">
+            <h2>Réalisations</h2>
+            <hr/>        
+                <div class="carousel">
+                  <ul class="slides">
+                    <input type="radio" name="radio-buttons" id="img-1" checked />
+                    <li class="slide-container">
+                      <div class="slide-image">
+                        <img src="images/carousel1.jpg">
+                      </div>
+                      <div class="carousel-controls">
+                        <label for="img-4" class="prev-slide">
+                          <span>&lsaquo;</span>
+                        </label>
+                        <label for="img-2" class="next-slide">
+                          <span>&rsaquo;</span>
+                        </label>
+                      </div>
+                    </li>
+                    <input type="radio" name="radio-buttons" id="img-2" />
+                    <li class="slide-container">
+                      <div class="slide-image">
+                        <img src="images/carousel2.jpg">
+                      </div>
+                      <div class="carousel-controls">
+                        <label for="img-1" class="prev-slide">
+                          <span>&lsaquo;</span>
+                        </label>
+                        <label for="img-3" class="next-slide">
+                          <span>&rsaquo;</span>
+                        </label>
+                      </div>
+                    </li>
+                    <input type="radio" name="radio-buttons" id="img-3" />
+                    <li class="slide-container">
+                      <div class="slide-image">
+                        <img src="images/carousel3.jpg">
+                      </div>
+                      <div class="carousel-controls">
+                        <label for="img-2" class="prev-slide">
+                          <span>&lsaquo;</span>
+                        </label>
+                        <label for="img-4" class="next-slide">
+                          <span>&rsaquo;</span>
+                        </label>
+                      </div>
+                    </li>
+                    <input type="radio" name="radio-buttons" id="img-4" />
+                    <li class="slide-container">
+                      <div class="slide-image">
+                        <img src="images/carousel4.jpg">
+                      </div>
+                      <div class="carousel-controls">
+                        <label for="img-3" class="prev-slide">
+                          <span>&lsaquo;</span>
+                        </label>
+                        <label for="img-1" class="next-slide">
+                          <span>&rsaquo;</span>
+                        </label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+            
+        </section>
 
     </main>
 </body>
