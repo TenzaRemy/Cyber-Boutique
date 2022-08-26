@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="cyber, boutique, nord, informatique" >
+    <meta name="robot" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/80ea7b44a0.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png" />
+    <title>Cyber-Boutique - Contact</title>
+</head>
+
+<body>
+
+    <header>
+        <a class="logo" href="index.html">Cyber-Boutique</a>
+    <nav>
+        <ul>
+            <li><a href="index.html"><p>A Propos</p></a></li>
+            <li><a href="index.html"><p>Services</p></a></li>
+            <li><a href="index.html"><p>Réalisations</p></a></li>
+            <li><a href="contact.html"><p>Contact</p></a></li>
+        </ul>
+    </nav>
+</header>
+    
+    <main>
+
+        <section id="Accueil">
+            <img class="imgBack" src="images/header.jpg" alt="fond page d'accueil">
+            <div class="blocForm">
+                <h3>Me Contacter</h3>
+                <form method="post" action="traitement.php">
+                    <div>
+                        <label for="mail">Adresse mail :</label>
+                        <input type="email" id="mail" name="user_mail" placeholder="Paul.durand@gmail.com">
+                    </div>
+                    <div>
+                        <label for="msg">Votre message :</label>
+                        <textarea id="msg" name="user_message" style="resize: none" cols="20" rows="2"></textarea>
+                    </div>
+                <Button type="submit" >Envoyer</Button>
+                </form>
+            </div>
+         </section>
+
+
+        <div class="footer-basic">
+            <footer>
+                <div class="social">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="contact.html"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="contact.html"><i class="fa-solid fa-phone"></i></a>
+                    <a href="contact.html"><i class="fa-solid fa-location-dot"></i></a>
+                    </div>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="index.html">Acceuil</a></li>
+                    <li class="list-inline-item"><a href="index.html">A propos</a></li>
+                    <li class="list-inline-item"><a href="index.html">Services</a></li>
+                    <li class="list-inline-item"><a href="index.html">Réalisations</a></li>
+                    <li class="list-inline-item"><a href="contact.html">Contact</a></li>
+                </ul>
+                <p class="copyright">Cyber-Boutique© 2022</p>
+            </footer>
+        </div>
+    </main>
+
+</body>
+</html>

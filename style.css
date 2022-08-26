@@ -281,7 +281,7 @@ ul.slides input {
     right: 0;
     z-index: 999;
     font-size: 100px;
-    line-height: 500px;
+    line-height: 450px;
     color: #f05f40;
 }
 
@@ -402,3 +402,30 @@ input:checked + .slide-container .nav label { display: block; }
     color:#212529;
     margin-bottom:0;
   }
+
+            /********************* Contact ********************************/
+
+.blocForm {
+    text-align: center;
+    background-color: #f05f40;
+    position: absolute;
+    top: 20%;
+    left: auto;
+    padding: 20px;
+    border-radius: 15px;
+    width: 70%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+label {
+    color: white;
+}
+
+input {
+    margin-bottom: 10px;
+}
