@@ -62,8 +62,8 @@ nav a:hover{
     margin-right: 1rem;
     font-size: 1.25rem;
     font-weight: 700;
-    margin-left: 120px;
-    width: 17%;
+    margin-left: 100px;
+    width: 100%;
     text-transform: uppercase;
 }
 
@@ -204,7 +204,7 @@ h3{
 
 .service{
     display: flex;
-    flex-wrap: wrap;
+    width: 100%;
 }
 
 i{
@@ -428,4 +428,60 @@ label {
 
 input {
     margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+.logo{
+    margin-left: 40px;
+}
+
+nav ul{
+    margin-right: auto;
+}
+
+.imgText{
+    top: 15%;
+}
+
+h4 {
+    margin: 10px 50px 50px;
+}
+
+h5{
+    margin: 10px 50px 20px;
+}
+
+.btn{
+    width: 23%;
+}
+
+.btn2 {
+    width: 29%;
+}
+
+ul.slides {
+    height: 400px;
+}
+
+.carousel-controls{
+    line-height: 400px;
+}
+
+.service{
+    flex-wrap: wrap;
+}
+
+article{
+    width: 44%;
+}
+
+}
+
+@media all and (max-width: 768px) {
+
+.service{ 
+    flex-direction: column;
+}
+
 }
