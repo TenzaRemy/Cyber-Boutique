@@ -29,7 +29,6 @@ nav{
     display: flex;
     text-align: center;
     justify-content: end;
-    width: 100%;
 }
 
 nav ul{
@@ -56,8 +55,11 @@ nav a:hover{
     color: #f05f40;
 }
 
+.navbar_toggleBtn {
+    display: none;
+  }
 
-
+  
 .logo{
     color: #f05f40;
     padding-top: 0.3125rem;
@@ -142,7 +144,7 @@ h5{
     font-size: 1rem;
     text-transform: uppercase;
     display: flex;
-    width: 14%;
+    width: 186px;
     margin: auto;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     transition: filter 300ms, box-shadow 300ms 100ms;
@@ -188,7 +190,7 @@ h3{
     font-size: 1rem;
     text-transform: uppercase;
     display: flex;
-    width: 17%;
+    width: 229px;
     margin: auto;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     transition: filter 300ms, box-shadow 300ms 100ms;
@@ -457,14 +459,6 @@ h5{
     margin: 10px 50px 20px;
 }
 
-.btn{
-    width: 23%;
-}
-
-.btn2 {
-    width: 29%;
-}
-
 ul.slides {
     height: 400px;
 }
@@ -486,7 +480,7 @@ article{
 @media all and (max-width: 768px) {
 
 .logo{
-    margin: 0;
+    margin: 0 180px 0 20px;
 }
 
 .imgText{
@@ -494,7 +488,46 @@ article{
 }
 
 nav ul{
-    margin-right: 0;
+    margin: 0;
+}
+
+nav ul li{
+    margin: 0;
+}
+
+  .navbar_menu {
+    display: none;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+  }
+  .navbar_menu li {
+    width: 100%;
+    text-align: center;
+  }  
+
+  .navbar_toggleBtn {
+    display: block;
+    position: absolute;
+    right: 32px;
+    color: #d49466;
+    cursor: pointer;
+    font-size: 10px;
+  }
+  .navbar_menu.active {
+    display: flex;
+  }
+
+button{
+    background: none;
+    border: none;
+    position: absolute;
+    top: 23%;
+}
+
+.fas{
+    font-size: 34px;
 }
 
 h1{
@@ -510,13 +543,6 @@ h5{
     margin: 10px 15px 50px;
 }
 
-.btn{ 
-    width: 50%;
-}
-
-.btn2{
-    width: 61%;
-}
 
 article{
     width: 100%;
