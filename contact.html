@@ -35,22 +35,55 @@
     <main>
 
         <section id="Accueil">
-            <img class="imgBack" src="images/header.jpg" alt="fond page d'accueil">
-            <div class="blocForm">
-                <h3>Me Contacter</h3>
-                <form method="post" action="traitement.php">
-                    <div>
-                        <label for="mail">Adresse mail :</label>
-                        <input type="email" id="mail" name="user_mail" placeholder="Paul.durand@gmail.com">
+            <img class="imgBackContact" src="images/header.webp" alt="fond page d'accueil">
+                <div class="imgText">
+                <h1>Cyber-Boutique</h1>
+                <hr/>
+                    <h4>Ravis que vous souhaitez collaborer et que me donniez votre confiance. Que puis-je faire pour vous ?</h4>
+                </div>
+            </section>
+
+            <div class="container bloc-lg">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <form id="form_1" >
+                            <div class="form-group">
+                                <label class="labelForm">
+                                    Nom Prénom
+                                </label class="labelForm">
+                                <input id="name" class="form-control" type="text" required  placeholder="Dupont Jean" />
+                            </div>
+                            <div class="form-group">
+                                <label class="labelForm">
+                                    Adresse email
+                                </label class="labelForm">
+                                <input id="email" class="form-control" type="email" required placeholder="Dupont.Jean54@gmail.com" />
+                            </div>
+                            <div class="form-group">
+                                <label class="labelForm">
+                                    Comment êtes vous arrivez ici ?
+                                </label class="labelForm">
+                                <input class="form-control" type="text" required id="input_504" placeholder="Depuis les réseaux sociaux" />
+                            </div>
+                            <div class="form-group">
+                                <label class="labelForm">
+                                    Que puis-je faire pour vous ?<br>
+                                </label class="labelForm"><textarea id="message" class="form-control" type="text" rows="4" style="resize: none;"cols="50" required placeholder="Ajoutez un commentaire sur ce que vous souhaitez (200 caractères maximum)"></textarea>
+                            </div> 
+                            <a class="btn3" type="submit" title="Formulaire Hors Service pour le moment">
+                                Envoyer
+                            </a>
+                        </form>
                     </div>
-                    <div>
-                        <label for="msg">Votre message :</label>
-                        <textarea id="msg" name="user_message" style="resize: none" cols="20" rows="2"></textarea>
+                    <div class="col-sm-6">
+                        <p>
+                            <strong>Email :</strong> contact@agencelapanthere.com<br>
+                            <strong>Adresse :</strong> 2 place Sathonay 69001 Lyon<br>
+                            <strong>Téléphone :</strong> 01 23 45 56 78<br>
+                        </p>
                     </div>
-                <Button type="submit" >Envoyer</Button>
-                </form>
+                </div>
             </div>
-         </section>
 
 
         <div class="footer-basic">
