@@ -23,6 +23,7 @@ header{
     background-color: white;
     z-index: 1;
     height: 60px;
+    justify-content: space-between;
 }
 
 nav{
@@ -46,7 +47,7 @@ nav a {
     color: #212529;
     font-weight: 700;
     font-size: 0.9rem;
-    padding: 37px;
+    margin: 37px;
     text-transform: uppercase;
     transition: all 400ms;
 }
@@ -68,9 +69,14 @@ nav a:hover{
     font-size: 1.25rem;
     font-weight: 700;
     margin-left: 100px;
-    width: 100%;
     text-transform: uppercase;
 }
+
+button.navbar_toggleBtn.fas.fa-bars{
+    display: none;
+}
+
+
 
 .imgBack{
     object-fit: cover;
@@ -443,6 +449,10 @@ input {
     margin-left: 40px;
 }
 
+button.navbar_toggleBtn.fas.fa-bars{
+    display: none;
+}
+
 nav ul{
     margin-right: auto;
 }
@@ -483,6 +493,10 @@ article{
     margin: 0 180px 0 20px;
 }
 
+button.navbar_toggleBtn.fas.fa-bars{
+    display: block;
+}
+
 .imgText{
     top: 25%;
 }
@@ -505,6 +519,7 @@ nav ul li{
   .navbar_menu li {
     width: 100%;
     text-align: center;
+    background-color: white;
   }  
 
   .navbar_toggleBtn {
