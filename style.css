@@ -101,7 +101,7 @@ button.navbar_toggleBtn.fas.fa-bars{
 
 .imgText{
     position: absolute;
-    top: 35%;
+    top: 150px;
 }
 
 .container {
@@ -328,7 +328,7 @@ h6{
 }
 
 .carousel {
-    margin: 40px auto 100px auto;
+    margin: 40px auto 100px;
     width: 50%;
     height: 50%;
 }
@@ -563,6 +563,10 @@ ul.slides {
     height: 400px;
 }
 
+.carousel{
+    margin: 40px 202.5px 100px;
+}
+
 .carousel-controls{
     line-height: 400px;
 }
@@ -661,6 +665,7 @@ article{
 
 .carousel{
     width: 75%;
+    margin: 40px 47px;
 }
 
 ul.slides {
