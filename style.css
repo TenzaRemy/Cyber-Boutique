@@ -529,6 +529,11 @@ label {
     color: white;
 }
 
+.contact{
+    justify-content: center;
+    display: flex;
+}
+
 input {
     margin-bottom: 10px;
 }
