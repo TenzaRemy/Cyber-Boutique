@@ -329,7 +329,7 @@ h6{
 
 .slider{
     background-image: url('images/carousel1.webp');
-    width: 40%;
+    width: 600px;
     height: 350px;
     margin: 40px auto 100px;
     background-position: center;
