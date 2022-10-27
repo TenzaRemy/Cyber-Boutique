@@ -230,7 +230,6 @@ h5{
     font-weight: 700;
     font-size: 1rem;
     text-transform: uppercase;
-    width: 100px;
     text-align: center;
     margin: 10px auto 40px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
@@ -329,8 +328,8 @@ h6{
 
 .slider{
     background-image: url('images/carousel1.webp');
-    width: 600px;
-    height: 350px;
+    width: 40vw;
+    height: 70vh;
     margin: 40px auto 100px;
     background-position: center;
     background-size: cover;
@@ -487,7 +486,8 @@ h5{
 }
 
 .slider{
-    width: 60%;
+    width: 50vw;
+    height: 30vh;
 }
 
 .service{
@@ -555,6 +555,17 @@ button{
     top: 23%;
 }
 
+.btn3{
+    position: absolute;
+    top: 150%;
+    right: 33%;
+    width: 135px;
+}
+
+.contact{
+    margin-top: 75px;
+}
+
 .fas{
     font-size: 34px;
 }
@@ -583,7 +594,8 @@ article{
 }
 
 .slider{
-    width: 90%;
+    width: 80vw;
+    height: 40vh;
 }
 
 .form-group{

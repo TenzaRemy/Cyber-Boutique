@@ -9,18 +9,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/80ea7b44a0.js" crossorigin="anonymous"></script>
-	<script src="main.js" defer></script>
+	<script src="form.js" defer></script>
+    <script src="main.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MDGD3ED2MW"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F3XPNL0CS2"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    gtag('config', 'G-MDGD3ED2MW');
-    </script>
+  gtag('config', 'G-F3XPNL0CS2');
+</script>
     <link rel="icon" href="images/favicon.webp" />
     <title>Contact - Cyber-Boutique</title>
 </head>
@@ -54,7 +56,7 @@
             <div class="container bloc-lg">
                 <div class="row">
                     <div class="col-sm-6">
-                        <form id="form_1" >
+                        <form onsubmit="sendEmail(); reset(); return false" >
                             <div class="form-group">
                                 <label class="labelForm">
                                     Nom Prénom
@@ -71,16 +73,16 @@
                                 <label class="labelForm">
                                     Comment êtes vous arrivez ici ?
                                 </label class="labelForm">
-                                <input class="form-control" type="text" required id="input_504" placeholder="Depuis les réseaux sociaux" />
+                                <input class="form-control" type="text" required id="arrive" placeholder="Depuis les réseaux sociaux" />
                             </div>
                             <div class="form-group">
                                 <label class="labelForm">
                                     Que puis-je faire pour vous ?<br>
                                 </label class="labelForm"><textarea id="message" class="form-control" type="text" rows="4" style="resize: none;"cols="50" required placeholder="Ajoutez un commentaire sur ce que vous souhaitez..."></textarea>
                             </div> 
-                            <a class="btn3" type="submit" title="Formulaire Hors Service pour le moment">
+                            <button id="submit" class="btn3" type="submit" >
                                 Envoyer
-                            </a>
+                            </button>
                         </form>
                     </div>
                     <div class="col-sm-6">
@@ -111,6 +113,6 @@
             </footer>
         </div>
     </main>
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>
