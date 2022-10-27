@@ -1,3 +1,79 @@
+const nameError = document.getElementById("nameError");
+const emailError = document.getElementById("emailError");
+
+function validateName() {
+  const nameValid = document.getElementById("name").value;
+  if(nameValid.length == 0){
+    document.getElementById("name").style.borderColor = "red";
+    document.getElementById("nameError").style.color = "red";
+    nameError.innerHTML = 'Votre nom et prénom sont requis';
+    return false;
+  }
+  if(!nameValid.match(/^[A-Za-z\é\è\ê\-]*\s{1}[A-Za-z\é\è\ê\-]*$/)) {
+    document.getElementById("name").style.borderColor = "red";
+    document.getElementById("nameError").style.color = "red";
+    nameError.innerHTML = 'Chiffres et caractères spéciaux interdits';
+    return false;
+  }
+  document.getElementById("name").style.borderColor = "#0cd577";
+  document.getElementById("nameError").style.color = "green";
+  nameError.innerHTML = 'Données saisies correct !';
+  return true;
+}
+
+function validateEmail() {
+  const emailValid = document.getElementById("email").value;
+  if(emailValid.length == 0){
+    document.getElementById("email").style.borderColor = "red";
+    document.getElementById("emailError").style.color = "red";
+    emailError.innerHTML = 'Veuillez saisir votre adresse mail';
+    return false;
+  }
+  if(!emailValid.match(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/)) {
+    document.getElementById("email").style.borderColor = "red";
+    document.getElementById("emailError").style.color = "red";
+    emailError.innerHTML = "Votre adresse mail n'est pas conforme";
+    return false;
+  }
+  document.getElementById("email").style.borderColor = "#0cd577";
+  document.getElementById("emailError").style.color = "green";
+  emailError.innerHTML = 'Adresse mail valide !';
+  return true;
+}
+
+function validateArrive() {
+  const arriveValid = document.getElementById("arrive").value;
+  if(arriveValid.length == 0){
+    document.getElementById("arrive").style.borderColor = "red";
+    document.getElementById("arriveError").style.color = "red";
+    arriveError.innerHTML = 'Veuillez nous dire comment êtes vous arrivez ici';
+    return false;
+  }
+  if(!arriveValid.match(/^[a-zA-Z]+(?:[\s-][a-zA-Z]+)*$/)) {
+    document.getElementById("arrive").style.borderColor = "red";
+    document.getElementById("arriveError").style.color = "red";
+    arriveError.innerHTML = "Votre saisie comporte des caractères spéciaux ou est trop longue";
+    return false;
+  }
+  document.getElementById("arrive").style.borderColor = "#0cd577";
+  document.getElementById("arriveError").style.color = "green";
+  arriveError.innerHTML = 'Information prise en compte !';
+  return true;
+}
+
+function validateMessage() {
+  const messageValid = document.getElementById("message").value;
+  if(!messageValid.match(/^[a-zA-Z]+(?:[\s-][a-zA-Z]+)*$/)) {
+    document.getElementById("message").style.borderColor = "red";
+    document.getElementById("messageError").style.color = "red";
+    messageError.innerHTML = "Votre saisie est trop courte ou trop longue";
+    return false;
+  }
+  document.getElementById("message").style.borderColor = "#0cd577";
+  document.getElementById("messageError").style.color = "green";
+  messageError.innerHTML = 'Message bien pris merci !';
+  return true;
+}
 
 function sendEmail() {
     Email.send({
@@ -15,10 +91,16 @@ function sendEmail() {
     }).then(
       message => console.log(message),
       document.getElementById("submit").style.backgroundColor = "green",
-      document.getElementById("name").style.borderColor = "lightgreen",
       document.getElementById("email").style.borderColor = "lightgreen",
       document.getElementById("arrive").style.borderColor= "lightgreen",
       document.getElementById("message").style.borderColor = "lightgreen",
-      swal("Votre demande à bien était envoyé. Je vous recontacter dans les plus brèves délais. Merci pour votre confiance"),
+      swal({
+        title: "Demande envoyée",
+        text: "Nous reviendrons vers vous dans les plus brefs délais",
+        icon: "success",
+        button: "A bientôt !",
+      }).then(function() {
+        window.location = "index.html";
+    }),
     );
 }
