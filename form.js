@@ -90,10 +90,10 @@ function validateMessage() {
 }
 
 function validateForm() {
-  if(!validateName() || !validateEmail() || !validateArrive()|| !validateMessage()) {
+  if(!validateName() || !validateEmail() || !validateArrive() || validateMessage()) {
     swal({
       title: "Erreur",
-      text: "Une erreur est survenue. Veuillez vérifier vos données saisies dans le formulaire",
+      text: "Une erreur est survenue. Veuillez vérifier vos données saisies dans le formulaire afin de pouvoir poursuivre.",
       icon: "error",
       button: "Fermer",
     })
