@@ -66,7 +66,7 @@
                             </div>
                             <div class="form-group">
                                 <label class="labelForm">
-                                    Adresse email
+                                    Adresse mail
                                 </label class="labelForm">
                                 <input id="email" class="form-control" onkeyup="validateEmail()" type="email" required placeholder="Dupont.Jean54@gmail.com" />
                                     <span id="emailError"></span>
@@ -84,7 +84,7 @@
                                 </label class="labelForm"><textarea id="message"onkeyup="validateMessage()" class="form-control" type="text" rows="4" style="resize: none;"cols="50" required placeholder="Ajoutez un commentaire sur ce que vous souhaitez..."></textarea>
                                     <span id="messageError"></span>
                             </div> 
-                            <button id="submit" class="btn3" type="submit" >
+                            <button id="submit" onclick="validateForm()" class="btn3" type="submit" >
                                 Envoyer
                             </button>
                         </form>
