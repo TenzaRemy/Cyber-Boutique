@@ -56,32 +56,32 @@
             <div class="container bloc-lg">
                 <div class="row">
                     <div class="col-sm-6">
-                        <form onsubmit="sendEmail(); reset(); return false" >
+                        <form action="https://formspree.io/f/xkneqkko" onsubmit="sendEmail()" method="POST" >
                             <div class="form-group">
                                 <label class="labelForm">
                                     Nom Prénom
                                 </label class="labelForm">
-                                <input id="name" class="form-control" onkeyup="validateName()" type="text" required  placeholder="Dupont Jean" />
+                                <input id="name" name="name" class="form-control" onkeyup="validateName()" type="text" required  placeholder="Dupont Jean" />
                                     <span id="nameError"></span>
                             </div>
                             <div class="form-group">
                                 <label class="labelForm">
                                     Adresse mail
                                 </label class="labelForm">
-                                <input id="email" class="form-control" onkeyup="validateEmail()" type="email" required placeholder="Dupont.Jean54@gmail.com" />
+                                <input id="email" name="email" class="form-control" onkeyup="validateEmail()" type="email" required placeholder="Dupont.Jean54@gmail.com" />
                                     <span id="emailError"></span>
                             </div>
                             <div class="form-group">
                                 <label class="labelForm">
                                     Comment êtes vous arrivez ici ?
                                 </label class="labelForm">
-                                <input class="form-control" type="text" onkeyup="validateArrive()" required id="arrive" placeholder="Depuis les réseaux sociaux" />
+                                <input class="form-control" name="arrive" type="text" onkeyup="validateArrive()" required id="arrive" placeholder="Depuis les réseaux sociaux" />
                                 <span id="arriveError"></span>
                             </div>
                             <div class="form-group">
                                 <label class="labelForm">
                                     Que puis-je faire pour vous ?<br>
-                                </label class="labelForm"><textarea id="message"onkeyup="validateMessage()" class="form-control" minlength="40" type="text" rows="4" style="resize: none;"cols="50" required placeholder="Ajoutez un commentaire sur ce que vous souhaitez..."></textarea>
+                                </label class="labelForm"><textarea id="message" name="message" onkeyup="validateMessage()" class="form-control" minlength="40" type="text" rows="4" style="resize: none;"cols="50" required placeholder="Ajoutez un commentaire sur ce que vous souhaitez..."></textarea>
                                     <span id="messageError"></span>
                             </div> 
                             <button id="submit" onclick="validateForm()" class="btn3" type="submit" >
