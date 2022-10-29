@@ -214,7 +214,7 @@ h5{
     font-size: 1rem;
     text-transform: uppercase;
     display: flex;
-    width: 186px;
+    width: 187px;
     margin: auto;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     transition: filter 300ms, box-shadow 300ms 100ms;
@@ -328,6 +328,7 @@ h6{
     opacity: 0.7;
     font-size: 1rem;
     font-weight: 400;
+    margin: 0 10px 0 10px;
 }
 
 .slider{
@@ -560,10 +561,9 @@ button{
 }
 
 .btn3{
-    position: absolute;
-    top: 150%;
-    right: 33%;
+    position: relative;
     width: 135px;
+    margin: 10px auto;
 }
 
 .contact{

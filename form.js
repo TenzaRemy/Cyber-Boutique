@@ -97,6 +97,7 @@ function validateForm() {
       icon: "error",
       button: "Fermer",
     })
+    document.getElementById("submit").style.backgroundColor = "red"
   }
 }
 
