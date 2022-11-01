@@ -332,13 +332,13 @@ h6{
 }
 
 .slider{
-    background-image: url('images/carousel1.webp');
+    background-image: url('images/carousel.webp');
     width: 40vw;
     height: 70vh;
     margin: 40px auto 100px;
     background-position: center;
     background-size: cover;
-    animation: loop infinite 20s ease-in-out;
+    animation: loop infinite 24s ease-in-out;
     transition: .3s ease-in-out;
 }
 
@@ -351,13 +351,19 @@ h6{
 
 @keyframes loop {
     0%, 100% {
-        background-image: url('images/carousel2.webp');       
+        background-image: url('images/carousel1.webp');       
     }
-    33% {
+    20% {
+        background-image: url('images/carousel2.webp');
+    }
+    40% {
         background-image: url('images/carousel3.webp');
     }
-    66% {
+    60% {
         background-image: url('images/carousel4.webp');
+    }
+    80% {
+        background-image: url('images/carousel5.webp');
     }
 }
 
