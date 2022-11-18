@@ -7,6 +7,7 @@ function validateName() {
     document.getElementById("name").style.borderColor = "red";
     document.getElementById("name").style.boxShadow = "inset 0 1px 1px red";
     document.getElementById("nameError").style.color = "red";
+    document.getElementById("nameError").style.fontWeight = "500";
     nameError.innerHTML = 'Votre nom et prénom sont requis';
     return false;
   }
@@ -14,11 +15,13 @@ function validateName() {
     document.getElementById("name").style.borderColor = "red";
     document.getElementById("name").style.boxShadow = "inset 0 1px 1px red";
     document.getElementById("nameError").style.color = "red";
+    document.getElementById("nameError").style.fontWeight = "500";
     nameError.innerHTML = 'Chiffres et caractères spéciaux interdits';
     return false;
   }
   document.getElementById("name").style.borderColor = "#0cd577";
   document.getElementById("name").style.boxShadow = "inset 0 1px 1px #0cd577";
+  document.getElementById("nameError").style.fontWeight = "500";
   document.getElementById("nameError").style.color = "green";
   nameError.innerHTML = 'Données saisies correct !';
   return true;
@@ -30,6 +33,7 @@ function validateEmail() {
     document.getElementById("email").style.borderColor = "red";
     document.getElementById("email").style.boxShadow = "inset 0 1px 1px red";
     document.getElementById("emailError").style.color = "red";
+    document.getElementById("emailError").style.fontWeight = "500";
     emailError.innerHTML = 'Veuillez saisir votre adresse mail';
     return false;
   }
@@ -37,6 +41,7 @@ function validateEmail() {
     document.getElementById("email").style.borderColor = "red";
     document.getElementById("email").style.boxShadow = "inset 0 1px 1px red";
     document.getElementById("emailError").style.color = "red";
+    document.getElementById("emailError").style.fontWeight = "500";
     emailError.innerHTML = "Votre adresse mail est invalide";
     return false;
   }
@@ -53,6 +58,7 @@ function validateArrive() {
     document.getElementById("arrive").style.borderColor = "red";
     document.getElementById("arrive").style.boxShadow = "inset 0 1px 1px red";
     document.getElementById("arriveError").style.color = "red";
+    document.getElementById("arriveError").style.fontWeight = "500";
     arriveError.innerHTML = 'Veuillez nous dire comment êtes vous arrivez ici';
     return false;
   }
@@ -60,12 +66,14 @@ function validateArrive() {
     document.getElementById("arrive").style.borderColor = "red";
     document.getElementById("arrive").style.boxShadow = "inset 0 1px 1px red";
     document.getElementById("arriveError").style.color = "red";
+    document.getElementById("arriveError").style.fontWeight = "500";
     arriveError.innerHTML = "Votre saisie comporte des caractères spéciaux ou est trop longue";
     return false;
   }
   document.getElementById("arrive").style.borderColor = "#0cd577";
   document.getElementById("arrive").style.boxShadow = "inset 0 1px 1px #0cd577";
   document.getElementById("arriveError").style.color = "green";
+  document.getElementById("arriveError").style.fontWeight = "500";
   arriveError.innerHTML = 'Information prise en compte !';
   return true;
 }
@@ -79,12 +87,14 @@ function validateMessage() {
     document.getElementById("message").style.borderColor = "red";
     document.getElementById("message").style.boxShadow = "inset 0 1px 1px red";
     document.getElementById("messageError").style.color = "red";
+    document.getElementById("messageError").style.fontWeight = "500";
     messageError.innerHTML = reste + " caractères manquants";
     return false;
   }
   document.getElementById("message").style.borderColor = "#0cd577";
   document.getElementById("message").style.boxShadow = "inset 0 1px 1px #0cd577";
   document.getElementById("messageError").style.color = "green";
+  document.getElementById("messageError").style.fontWeight = "500";
   messageError.innerHTML = 'Message bien pris merci !';
   return true;
 }
